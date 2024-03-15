@@ -16,7 +16,7 @@
  * @requires dotenv
  * @link https://www.npmjs.com/package/dotenv
  */
-import dotenv from "dotenv"
+const dotenv = require('dotenv');
 
 /** Borsdata API class.
  * @class BorsdataAPI
@@ -475,4 +475,7 @@ class BorsdataAPI {
 	}
 }
 
-export default BorsdataAPI
+module.exports = {
+	BorsdataAPI
+}
+
